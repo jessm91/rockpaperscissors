@@ -2,12 +2,10 @@ from random import choice
 
 options = ['rock', 'paper', 'scissors']
 
-"""Random computer answer"""
-opponent = choice(options)
-
 """user input & game options"""
 while True:
     answer = input("Please choose rock, paper or scissors [press 'q' to quit]: ")
+    opponent = choice(options)
 
     if answer == 'q':
         break
